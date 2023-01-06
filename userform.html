@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSTI Mumbai</title>
+    <style>
+        body {
+            color:white;
+            background-image: url("https://images.pexels.com/photos/1143530/pexels-photo-1143530.jpeg?auto=compress&cs=tinysrgb&w=1600");
+            background-size: cover;
+             margin:10vh 30vh 30vh 50vh; 
+             font-size:20px;
+
+        }
+        .main{
+            border:2px solid black;
+            display: inline-block;
+            border-radius:20px;
+            background-color:rgba(0,0,0,0.6);
+            width:500px;
+            text-shadow: 4px 4px 4px black;
+        }
+        h2{
+          text-align: center;
+        }
+        input{
+            margin:2px 5px 7px 10px;
+            border-radius: 9px;
+            border:1px solid brown;
+            padding: 2px 6px  7px 10px;
+            font-size:18px;
+        }
+
+        .form1{
+            margin:2px 5px 15px 50px;
+        }
+span{
+    color:red
+}
+
+    input[type="submit"], input[type="reset"]{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bolder;
+        margin:20px 10px 10px 60px;
+        padding: 4px 15px;
+        border-radius:8px;
+        background-color:rgb(27, 255, 255);
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <form action="" method="get">
+            <h2> Resistration Form</h2>
+            <div class="form1">
+            <table>
+                <tr>
+                    <td>Student Image<span>*</span> <input type="file" id="name" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <td>Student Name<span>*</span><input type="text" id="name" maxlength="20" required> </td>
+                </tr>
+                <tr>
+                    <td>Father Name<span>*</span><input type="text" id="name" maxlength="20" required> </td>
+                </tr>
+                <tr>
+                    <td>Mother Name<span>*</span><input type="text" id="name" maxlength="20" required> </td>
+                </tr>
+                <tr>
+                    <td><label for="gender"> Gender<span>*</span></label>
+                        <label for="male"> Male</label>
+                        <input type="radio" id="male" name="gender">
+                        <label for="female">female</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">other</label>
+                        <input type="radio" id="other" name="gender">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age<span>*</span><input type="number" id="name" min="2" placeholder="Enter your Age " required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DOB<span>*</span> <input type="date" id="DOB" name="DOB" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email<span>*</span></label> <input type="email" id="email" required></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="edicatioon">Level<span>*</span></label> <select for="eduction" required>
+                            <option value="10">10th</option>
+                            <option value="12th">12th</option>
+                            <option value="iti">iti</option>
+                            <option value="diploma">diploma</option>
+                            <option value="Degree">Degree</option>
+                            <option value="gradu">Graduation</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Department<span>*</span><select for="eduction">
+                            <option value="10" selected required>select option</option>
+                            <option value="Electrical">Electrical</option>
+                            <option value="Mechanical">Mechanical</option>
+                            <option value="Electronic">Electronic</option>
+                            <option value="Computer">Computer</option>
+                            <option value="Fitter">Fitter</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number <input type="number" name="mobil" id="mobile" required></td>
+                </tr>
+                <tr>
+                    <td>Country<span>*</span><input type="text" name="country" id="country" required></td>
+                </tr>
+                <tr>
+                    <td>State<span>*</span><input type="text" name="state" id="state" required></td>
+                </tr>
+                <tr>
+                    <td>City<span>*</span><input type="text" name="city" id="city" required></td>
+                </tr>
+                <tr>
+                    <td>Zip Code<span>*</span><input type="text" name="Zipcode" id="Zipcode" required></td>
+                </tr>
+                <tr>
+                    <td> <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </td> </tr>
+        </form>
+        </table>
+        </div>
+    </div>
+</body>
+
+</html>

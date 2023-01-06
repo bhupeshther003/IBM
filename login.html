@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet"  type="text/css"  href="log.css">
+
+   <script>
+	function f1()
+{
+	
+	 var uname = document.getElementById("uname").value;
+
+	 var password = document.getElementById("password").value;
+
+	// if(us>100 && pass>100)
+	// {
+	// 	 alert("Your Login Successfully");
+	//     }
+	// 	else{
+	// 		alert("BVT");
+	// 	}
+	// }
+		if(uname == "admin" && password == "1234")
+					{
+					     alert(" Login Successfuly");
+						 return false;
+					}
+					else 
+					{
+						alert("Login fail");
+						return false;
+					}
+	
+				}		
+   </script>
+
+</head>
+<body>
+	<form action="login.html" action="post">
+	<div class="box"> 
+	<h2> Login Page</h2>
+	
+	<label for="usame"> Username</label>
+	<input type="text" id="uname" name="username">
+	<br> <br>
+	<label for="passd">Password</label>
+	<input type="password" id="password" name="pass">
+    <br> <br>
+	<input type="button" id="sumbit" value="sumbit" name="Sumbit" onclick="f1()">
+<br><br>
+</div> 
+</body>
+</html>
